@@ -217,7 +217,6 @@ public class MyZookeeper implements Watcher
 	/**
 	 * 收到来自Server的Watcher通知后的处理。
 	 */
-	@Override
 	public void process(WatchedEvent event)
 	{
 		System.out.println("收到事件通知：" + event.getState() + "\n");
