@@ -25,7 +25,7 @@ public class MyZookeeper implements Watcher
 {
 	private static final int SESSION_TIMEOUT = 10000;
 //	private static final String CONNECTION_STRING = "zookeeper01:2181,zookeeper02:2181,zookeeper03:2181";
-	private static final String CONNECTION_STRING = "slave3:2181,slave3:2182,slave3:2183";//现我的是伪分布式
+	private static final String CONNECTION_STRING = "192.168.33.42:2181";//现我的是伪分布式
 	private static final String ZK_PATH = "/test";
 	private ZooKeeper zk = null;
 	private CountDownLatch connectedSemaphore = new CountDownLatch(1);
